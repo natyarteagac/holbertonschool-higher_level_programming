@@ -1,2 +1,2 @@
 #!/bin/bash
-python <<< 'print("Holberton School: {}".format(88+10))'
+echo $PYCODE | python
