@@ -6,11 +6,14 @@ if __name__ == "__main__":
 
     print("{} + {} = {}\n".format(a, b, add(a, b)), end='')
 
+if __name__ == "__main__":
     from calculator_1 import sub
     print("{} - {} = {}\n".format(a, b, sub(a, b)), end='')
 
+if __name__ == "__main__":
     from calculator_1 import mul
     print("{} * {} = {}\n".format(a, b, mul(a, b)), end='')
 
+if __name__ == "__main__":
     from calculator_1 import div
     print("{} / {} = {}\n".format(a, b, div(a, b)), end='')
