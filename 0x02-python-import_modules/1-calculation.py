@@ -22,4 +22,4 @@ if __name__ == "__main__":
     a = 10
     b = 5
 
-    print("{} / {} = {}\n".format(a, b, div(a,b)), end='')
+    print("{} / {} = {}\n".format(a, b, div(a, b)), end='')
