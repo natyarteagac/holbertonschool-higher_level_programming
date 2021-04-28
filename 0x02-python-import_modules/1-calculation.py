@@ -4,7 +4,7 @@ if __name__ == "__main__":
     a = 10
     b = 5
 
-    print(a, '+', b, '=', add(a, b), '\n', end='')
-    print(a, '-', b, '=', sub(a, b), '\n', end='')
-    print(a, '*', b, '=', mul(a, b), '\n', end='')
-    print(a, '/', b, '=', div(a, b), '\n', end='')
+    print("{} + {} = {}".format(a, b, add(a, b), end=''))
+    print("{} - {} = {}".format(a, b, sub(a, b), end=''))
+    print("{} * {} = {}".format(a, b, mul(a, b), end=''))
+    print("{} / {} = {}".format(a, b, div(a, b), end=''))
