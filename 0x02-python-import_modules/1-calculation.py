@@ -4,16 +4,14 @@ if __name__ == "__main__":
     a = 10
     b = 5
 
-    print("{} + {} = {}\n".format(a, b, add(a, b)), end='')
+    print(a, '+', b, '=', add(a, b), '\n', end='')
 
-if __name__ == "__main__":
     from calculator_1 import sub
-    print("{} - {} = {}\n".format(a, b, sub(a, b)), end='')
 
-if __name__ == "__main__":
+    print(a, '-', b, '=', sub(a, b), '\n', end='')
+
     from calculator_1 import mul
-    print("{} * {} = {}\n".format(a, b, mul(a, b)), end='')
+    print(a, '*', b, '=', mul(a, b), '\n', end='')
 
-if __name__ == "__main__":
     from calculator_1 import div
-    print("{} / {} = {}\n".format(a, b, div(a, b)), end='')
+    print(a, '/', b, '=', div(a, b), '\n', end='')
