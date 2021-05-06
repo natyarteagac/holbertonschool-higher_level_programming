@@ -1,4 +1,4 @@
-#!usr/bin/python3
+#!/usr/bin/python3
 def no_c(my_string):
     my_string = list(my_string)
     count_lower = my_string.count('c')
