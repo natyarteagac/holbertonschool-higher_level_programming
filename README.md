@@ -1,7 +1,7 @@
-## 0x04. Python - More Data Structures: Set, Dictionary
+# 0x04. Python - More Data Structures: Set, Dictionary
 
-## Learning Objectives
-# General
+# Learning Objectives
+## General
 - Why Python programming is awesome
 - What are set and how to use them
 - What are the most common methods of set and how to use them
@@ -14,8 +14,8 @@
 - What is a lambda function
 - What is map, reduce and filter functions
 
-## Requirements
-# General
+# Requirements
+## General
 - Allowed editors: vi, vim, emacs
 - All your files will be interpreted/compiled on Ubuntu 14.04 LTS using python3 (version 3.4.3)
 - All your files should end with a new line
@@ -25,7 +25,7 @@
 - All your files must be executable
 - The length of your files will be tested using wc
 
-# How to compile
+## How to compile
 Example: ./0-main.py
 
 # Tasks
