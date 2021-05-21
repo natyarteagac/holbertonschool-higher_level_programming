@@ -2,12 +2,8 @@
 """ class rectangle """
 
 
-from typing import ByteString
-
-
 class Rectangle:
     """ Private width and height of the rectangle  """
-    pass
 
     def __init__(self, width=0, height=0):
         self.width = width
