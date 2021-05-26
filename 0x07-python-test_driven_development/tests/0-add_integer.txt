@@ -1,0 +1,109 @@
+The ``0-add_integer`` module
+==============================
+
+Using ``add_integer``
+---------------------
+
+First is an example text file in reStructuredText format. First import
+``add_integer`` from the ``0-add_integer.py`` module:
+
+    >>> add_integer = __import__('0-add_integer').add_integer
+
+Now use it:
+    >>> add_integer(-2, -3)
+    -5
+
+    >>> add_integer(True)
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
+
+    >>> add_integer(, 4)
+    Traceback (most recent call last):
+    ...
+    SyntaxError: invalid syntax
+
+    >>> add_integer('a', 'z')
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
+
+    >>> add_integer([2])
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
+
+    >>> add_integer('h', 5)
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
+
+    >>> add_integer({'a': 1}, 2)
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
+
+    >>> add_integer(1.5, 4)
+    5
+
+    >>> add_integer()
+    Traceback (most recent call last):
+    ...
+    TypeError: add_integer() missing 1 required positional argument: 'a'
+
+    >>> add_integer(-2, 3)
+    1
+
+    >>> add_integer(2, [3])
+    Traceback (most recent call last):
+    ...
+    TypeError: b must be an integer
+
+    >>> add_integer(2^2, 1)
+    1
+
+    # Checking pep8 style
+    >>> import os
+    >>> os.popen("pep8 0-add_integer.py").read()
+    ''
+
+    # Checking comments
+    >>> comments = __import__('0-add_integer').__doc__
+    >>> len(comments) > 4
+    True
+
+    # Checking comments (after)
+    >>> comments = __import__('0-add_integer').__doc__
+    >>> len(comments) > 2
+    True
+
+    # Checking README
+    >>> import os
+    >>> os.path.exists('README.md')
+    True
+
+    # Checking Executable
+    >>> import os
+    >>> pathfile = os.getcwd() + '/0-add_integer.py'
+    >>> os.access(pathfile, os.X_OK)
+    True
+
+    # Checking (shebang)
+    >>> with open('0-add_integer.py', "r") as file:
+    ...     first_line = file.readline()
+    >>> first_line == '#!/usr/bin/python3\n'
+    True
+
+    #Checking (newline to the end)
+    >>> with open('0-add_integer.py', "r") as file:
+    ...     for last_line in file:
+    ...             pass
+    ...
+    >>> last_line[-1] == '\n'
+    True
+
+    # Checking if README is empty
+    >>> import os
+    >>> pathfile = os.getcwd() + 'README.md'
+    >>> os.stat('README.md').st_size == 0
+    False

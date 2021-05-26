@@ -1,0 +1,90 @@
+The ``4-print_square`` module
+==============================
+
+Using ``print_square``
+---------------------
+
+First is an example text file in reStructuredText format. First import
+``print_square`` from the ``4-print_square.py`` module:
+
+    >>> print_square = __import__('4-print_square').print_square
+
+Now use it:
+
+    >>> print_square("")
+    Traceback (most recent call last):
+    ...
+    TypeError: size must be an integer
+
+    >>> print_square(-1)
+    Traceback (most recent call last):
+    ...
+    ValueError: size must be >= 0
+
+    >>> print_square("string")
+    Traceback (most recent call last):
+    ...
+    TypeError: size must be an integer
+
+    >>> print_square(2.5)
+    Traceback (most recent call last):
+    ...
+    TypeError: size must be an integer
+
+    >>> print_square(8, 7)
+    Traceback (most recent call last):
+    ...
+    TypeError: print_square() takes 1 positional argument but 2 were given
+
+    >>> print_square(0)
+
+    >>> print_square(None)
+    Traceback (most recent call last):
+    ...
+    TypeError: size must be an integer
+
+    # Checking pep8 style
+    >>> import os
+    >>> os.popen("pep8 4-print_square.py").read()
+    ''
+
+    # Checking comments
+    >>> comments = __import__('4-print_square').__doc__
+    >>> len(comments) > 4
+    True
+
+    # Checking comments
+    >>> comments = __import__('4-print_square').__doc__
+    >>> len(comments) > 2
+    True
+
+    #Checking (newline to the end)
+    >>> with open('4-print_square.py', "r") as file:
+    ...     for last_line in file:
+    ...             pass
+    ...
+    >>> last_line[-1] == '\n'
+    True
+
+    # Checking (shebang)
+    >>> with open('4-print_square.py', "r") as file:
+    ...     first_line = file.readline()
+    >>> first_line == '#!/usr/bin/python3\n'
+    True
+
+    # Checking Executable
+    >>> import os
+    >>> pathfile = os.getcwd() + '/4-print_square.py'
+    >>> os.access(pathfile, os.X_OK)
+    True
+
+    # Checking README
+    >>> import os
+    >>> os.path.exists('README.md')
+    True
+
+    # Checking if README is empty
+    >>> import os
+    >>> pathfile = os.getcwd() + 'README.md'
+    >>> os.stat('README.md').st_size == 0
+    False
