@@ -16,8 +16,6 @@ def matrix_divided(matrix, div):
         raise TypeError('div must be a number')
     if div == 0:
         raise ZeroDivisionError('division by zero')
-    if matrix[[]] == 0:
-        raise TypeError(Errstr)
 
     for listleng in range(len(matrix)):
         new_list.append([])
