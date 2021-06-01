@@ -7,7 +7,9 @@ of a class that inherited from.
 
 
 def is_kind_of_class(obj, a_class):
-    """ Using method isintance to verify the object """
+    """ Using method isintance to verify the object
+
+    """
     if isinstance(obj, a_class):
         return True
     else:
