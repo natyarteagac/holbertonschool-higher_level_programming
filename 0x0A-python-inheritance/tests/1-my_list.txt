@@ -1,0 +1,38 @@
+The ``1-my_list`` module
+==============================
+
+Using ``MyClass``
+---------------------
+
+First is an example text file in reStructuredText format. First import
+``MyList`` from the ``1-my_list.py`` module:
+
+    >>> MyList = __import__('1-my_list').MyList
+
+Now use it:
+    # Checking if README is empty
+    >>> import os
+    >>> pathfile = os.getcwd() + 'README.md'
+    >>> os.stat('README.md').st_size == 0
+    False
+
+    # Checking (shebang)
+    >>> with open('1-my_list.py', "r") as file:
+    ...     first_line = file.readline()
+    >>> first_line == '#!/usr/bin/python3\n'
+    True
+
+    # Checking comments
+    >>> comments = __import__('1-my_list').__doc__
+    >>> len(comments) > 4
+    True
+
+    # Checking comments (after)
+    >>> comments = __import__('1-my_list').__doc__
+    >>> len(comments) > 2
+    True
+
+    # Checking pep8 style
+    >>> import os
+    >>> os.popen("pep8 1-my_list.py").read()
+    ''
