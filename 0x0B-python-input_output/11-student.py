@@ -27,6 +27,5 @@ class Student:
             return self.__dict__
 
     def reload_from_json(self, json):
-        self.first_name = json
-        self.last_name = json
-        self.age = json
+        for key, value in json.items():
+            setattr(self, key, value)
