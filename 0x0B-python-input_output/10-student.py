@@ -16,9 +16,12 @@ class Student:
         self.age = age
 
     def to_json(self, attrs=None):
-        new_dic = {}
         iterator = 0
-        for iterator in range(attrs):
-            iterator += 1
-            if attrs == self.__dict__:
-                return new_dic[iterator]
+        new_dictionary = {}
+        if type(attrs) == list:
+            for iterator in attrs:
+                if iterator in self.__dict__:
+                    new_dictionary[iterator] = self.__dict__[iterator]
+            return new_dictionary
+        else:
+            return self.__dict__
