@@ -5,9 +5,6 @@
 """
 
 
-from typing import NewType
-
-
 class Student:
     """
     creation of the class student
