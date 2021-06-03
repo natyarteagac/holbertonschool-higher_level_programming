@@ -10,6 +10,5 @@ def load_from_json_file(filename):
     """
     Creating an object
     """
-    with open(filename, "w", encoding="utf-8") as f:
-        for lines in f:
-            f.write(json.loads(lines))
+    with open(filename, "r", encoding="utf-8") as f:
+        return json.loads(f)
