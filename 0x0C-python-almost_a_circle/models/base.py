@@ -14,6 +14,9 @@ class Base:
     __nb_objects = 0
 
     def __init__(self, id=None):
+        """
+        Defining all the atributes of the class
+        """
         if id is not None:
             self.id = id
         else:
@@ -22,6 +25,9 @@ class Base:
 
     @staticmethod
     def to_json_string(list_dictionaries):
+        """
+        Returning a dictionary of the list of give atributes
+        """
         if list_dictionaries is None:
             return "[]"
         else:
@@ -29,6 +35,9 @@ class Base:
 
     @classmethod
     def save_to_file(cls, list_objs):
+        """
+        Creating a dictionary of dictionaries
+        """
         if list_objs is None:
             list_objs = []
         new_list = []
@@ -36,3 +45,13 @@ class Base:
             new_list.append(cls.to_dictionary(list_objs[index]))
         with open(cls.__name__ + ".json", "w+", encoding="utf=8") as f:
             f.write(Base.to_json_string(new_list))
+
+    @staticmethod
+    def from_json_string(json_string):
+        """
+        Returning a dictionary
+        """
+        if not json_string:
+            json_string = []
+        else:
+            return json.dumps(json_string)
