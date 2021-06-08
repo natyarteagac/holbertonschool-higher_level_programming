@@ -123,9 +123,8 @@ class Rectangle(Base):
         """
         Returning a string
         """
-        string = "[Rectangle]({}) {}/{} - {}/{}"
-        return string.format(self.id, self.__x, self.__y,
-                             self.__width, self.__height)
+        return "[Rectangle]({}) {}/{} - {}/{}"\
+            .format(self.id, self.__x, self.__y, self.__width, self.__height)
 
     def update(self, *args, **kwargs):
         """
