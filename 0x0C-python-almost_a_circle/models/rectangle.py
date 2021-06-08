@@ -25,14 +25,14 @@ class Rectangle(Base):
     @property
     def width(self):
         """
-        Getter
+        Getter for width
         """
         return self.__width
 
     @width.setter
     def width(self, value):
         """
-        Setter
+        Setter for width
         """
         if type(value) is not int:
             raise TypeError("width must be an integer")
@@ -45,14 +45,14 @@ class Rectangle(Base):
     @property
     def height(self):
         """
-        Getter
+        Getter for height
         """
         return self.__height
 
     @height.setter
     def height(self, value):
         """
-        Setter
+        Setter for height
         """
         if type(value) is not int:
             raise TypeError("height must be an integer")
@@ -65,14 +65,14 @@ class Rectangle(Base):
     @property
     def x(self):
         """
-        Getter
+        Getter for x
         """
         return self.__x
 
     @x.setter
     def x(self, value):
         """
-        Setter
+        Setter for x
         """
         if type(value) is not int:
             raise TypeError("x must be an integer")
@@ -85,14 +85,14 @@ class Rectangle(Base):
     @property
     def y(self):
         """
-        Getter
+        Getter for y
         """
         return self.__y
 
     @y.setter
     def y(self, value):
         """
-        Setter
+        Setter for y
         """
         if type(value) is not int:
             raise TypeError("y must be an integer")
@@ -104,7 +104,7 @@ class Rectangle(Base):
 
     def area(self):
         """
-        Getter
+        Getter for area
         """
         return self.__height * self.__width
 
@@ -123,7 +123,9 @@ class Rectangle(Base):
         """
         Returning a string
         """
-        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.__x, self.__y, self.__width, self.__height)
+        str = "[Rectangle] ({}) {}/{} - {}/{}".format(self.id,
+                                                      self.__x, self.__y, self.__width, self.__height)
+        return str
 
     def update(self, *args, **kwargs):
         """
