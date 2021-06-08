@@ -20,14 +20,19 @@ class Base:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
 
+    @staticmethod
     def to_json_string(list_dictionaries):
         if list_dictionaries is None:
             return "[]"
         else:
             return json.dumps(list_dictionaries)
 
+    @classmethod
     def save_to_file(cls, list_objs):
-        with open(Base.json, "w", encoding="utf=8") as f:
-            if list_objs is None:
-                f.write("[]")
-            else:
+        if list_objs is None:
+            list_objs = []
+        new_list = []
+        for index in range(len(list_objs)):
+            new_list.append(cls.to_dictionary(list_objs[index]))
+        with open(cls.__name__ + ".json", "w+", encoding="utf=8") as f:
+            f.write(Base.to_json_string(new_list))
