@@ -51,7 +51,7 @@ class Base:
         """
         Returning a dictionary
         """
-        if not json_string:
+        if json_string is None:
             json_string = []
         else:
             return json.loads(json_string)
