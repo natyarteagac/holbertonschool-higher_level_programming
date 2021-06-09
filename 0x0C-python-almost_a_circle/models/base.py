@@ -70,7 +70,7 @@ class Base:
     def load_from_file(cls):
         """ Loading a file """
         filename = cls.__name__ + ".json"
-        if not filename:
+        if filename is None:
             return []
         else:
             with open(filename, "r", encoding="utf-8") as f:
