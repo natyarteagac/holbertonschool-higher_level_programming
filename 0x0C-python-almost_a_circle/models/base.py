@@ -70,9 +70,7 @@ class Base:
     def load_from_file(cls):
         """ Loading a file """
         filename = cls.__name__ + ".json"
-        if filename is None:
-            return []
-        else:
+        try:
             with open(filename, "r", encoding="utf-8") as f:
                 new_list_two = []
                 new_list_two = cls.from_json_string(f.read())
@@ -80,3 +78,6 @@ class Base:
                 for index in range(len(new_list_two)):
                     new_list_three.append(cls.create(**new_list_two[index]))
                 return new_list_three
+        except:
+            if filename is None:
+                return []
