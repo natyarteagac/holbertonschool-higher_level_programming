@@ -1,46 +1,52 @@
 # 0x0D-SQL_introduction
 
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="Holberton School">
-    <meta name="google" content="notranslate">
+<h2>Resources</h2>
 
-<link rel="stylesheet" href="https://use.typekit.net/xgz4ilr.css">
+<p><strong>Read or watch</strong>:</p>
 
-<title>Project: 0x0D. SQL - Introduction | Holberton Intranet</title>
+<ul>
+<li><a href="/rltoken/khEqMKp1PHvKpfO18d4fLQ" title="What is Database &amp; SQL?" target="_blank">What is Database &amp; SQL?</a> </li>
+<li><a href="/rltoken/qrONF5FZPsRxRJ2FkLVPcg" title="A Basic MySQL Tutorial" target="_blank">A Basic MySQL Tutorial</a> </li>
+<li><a href="/rltoken/ibCYnC9CDgZg5NQQvccBWw" title="Basic SQL statements: DDL and DML" target="_blank">Basic SQL statements: DDL and DML</a> (<em>no need to read the chapter &ldquo;Privileges&rdquo;</em>)</li>
+<li><a href="/rltoken/yelYhpf7l0FcRIPCVfnMLw" title="Basic queries: SQL and RA" target="_blank">Basic queries: SQL and RA</a> </li>
+<li><a href="/rltoken/3aQcovOE-clrD8yIfxFE9Q" title="SQL technique: functions" target="_blank">SQL technique: functions</a> </li>
+<li><a href="/rltoken/lTXnq6pdk59x2h_Y-q0-Hg" title="SQL technique: subqueries" target="_blank">SQL technique: subqueries</a> </li>
+<li><a href="/rltoken/R--kAkehyaawZFY4m1inxQ" title="What makes the big difference between a backtick and an apostrophe?" target="_blank">What makes the big difference between a backtick and an apostrophe?</a> </li>
+<li><a href="/rltoken/aGZu7ulJpbbKcDhcz49yrg" title="MySQL Cheat Sheet" target="_blank">MySQL Cheat Sheet</a> </li>
+<li><a href="/rltoken/XrqR4oh6zsk0eOKoTgkA3Q" title="MySQL 5.7 SQL Statement Syntax" target="_blank">MySQL 5.7 SQL Statement Syntax</a> </li>
+</ul>
 
-<link rel="stylesheet" media="all" href="/assets/application_blue-a7412a70bd5725360d964272e5d16141a670925f1c607d1b79119d209ddc4122.css" />
-    <script src="https://www.gstatic.com/charts/loader.js"></script>
-    <script src="/assets/application-c73b57e94bf5c05a22f29487f5020ad02d30f68f8a9eb006b1282b6c73ebfcfc.js"></script>
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon_blue.ico" />
-    <meta name="csrf-param" content="authenticity_token" />
-<meta name="csrf-token" content="aHDI0IFIrJtTntRObpY6UQCr2j1ZaxW+X5NRN83x8NLnoS78WIT/qOLf6d1pXYbbPJtyg1aYOfnBIavebinM3w==" />
+<h2>Learning Objectives</h2>
 
-<link rel="apple-touch-icon" href="/apple-touch-icon_blue.png">
+<p>At the end of this project, you are expected to be able to <a href="/rltoken/jfYCdfSeM9SClR9gWzDaLA" title="explain to anyone" target="_blank">explain to anyone</a>, <strong>without the help of Google</strong>:</p>
 
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+<h3>General</h3>
 
-<!-- Video player -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/ewwink/clappr-quality-selector-plugin@latest/quality-selector.js"></script>
+<ul>
+<li>What&rsquo;s a database</li>
+<li>What&rsquo;s a relational database</li>
+<li>What does SQL stand for</li>
+<li>What&rsquo;s MySQL</li>
+<li>How to create a database in MySQL</li>
+<li>What does <code>DDL</code> and <code>DML</code> stand for</li>
+<li>How to <code>CREATE</code> or <code>ALTER</code> a table</li>
+<li>How to <code>SELECT</code> data from a table</li>
+<li>How to <code>INSERT</code>, <code>UPDATE</code> or <code>DELETE</code> data</li>
+<li>What are <code>subqueries</code></li>
+<li>How to use MySQL functions</li>
+</ul>
 
-<!-- Store user timezone -->
-<script>
-    Cookies.set('timezone', (new Date()).getTimezoneOffset() / -60.0);
-</script>
+<h2>Requirements</h2>
 
-<!-- intro.js for interactive onboarding -->
+<h3>General</h3>
 
-<!-- React -->
-<script src="/packs/js/application-35a2f44fd2e9d36a0b85.js"></script>
-<link rel="stylesheet" media="screen" href="/packs/css/application-3daba01b.css" />
-
-  </head>
+<ul>
+<li>Allowed editors: <code>vi</code>, <code>vim</code>, <code>emacs</code></li>
+<li>All your files will be executed on Ubuntu 14.04 LTS using <code>MySQL 5.7</code> (version 5.7.8-rc)</li>
+<li>All your files should end with a new line</li>
+<li>All your SQL queries should have a comment just before (i.e. syntax above)</li>
+<li>All your files should start by a comment describing the task</li>
+<li>All SQL keywords should be in uppercase (<code>SELECT</code>, <code>WHERE</code>&hellip;)</li>
+<li>A <code>README.md</code> file, at the root of the folder of the project, is mandatory</li>
+<li>The length of your files will be tested using <code>wc</code></li>
+</ul>
