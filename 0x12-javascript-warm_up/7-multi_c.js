@@ -1,5 +1,5 @@
 #!/usr/bin/node
-/* Loop to print all the array
+/* Printing x times "C is fun".
 */
 
 const x = process.argv[2];
