@@ -1,11 +1,11 @@
 #!/usr/bin/node
 /* Script to print if arguments exists or not
 */
-const myVar = process.argv.length;
+const myVar = process.argv;
 
-if (myVar < 3) {
+if (myVar.length < 3) {
   console.log('No argument');
-} else if (myVar === 3) {
+} else if (myVar.length === 3) {
   console.log('Argument found');
 } else {
   console.log('Arguments found');
