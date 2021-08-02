@@ -1,5 +1,5 @@
 #!/usr/bin/node
-/* Function to print a square with giving args
+/* Function to print a square with giving argv
 */
 
 const size = parseInt(process.argv[2]);
