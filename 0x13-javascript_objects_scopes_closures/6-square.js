@@ -12,7 +12,7 @@ class Square extends require('./5-square') {
 
   charPrint (c) {
     // Print the size of Square and verify if variable exists print with the character C if not print with X
-    for (let index = 0; index < this.size; index++) {
+    for (let index = 0; index < this.width; index++) {
       if (!c) {
         console.log('X'.repeat(this.width));
       } else {
