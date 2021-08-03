@@ -5,7 +5,7 @@
 class Rectangle {
   // Defining width and height attributes.
   constructor (w, h) {
-    // if width and height are bigger --> define the instance attribute.
+    // if w and h are bigger than 0 --> define the instance attribute.
     if (w > 0 && h > 0) {
       this.width = w;
       this.height = h;
