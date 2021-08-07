@@ -2,19 +2,21 @@
 """ Create states table in hbtn_0e_0_usa with some data """
 
 import MySQLdb
-import sys
-args = sys.argv
+from sys import argv
 
-db = MySQLdb.connect(localhost=args[1], password=args[2], database=args[3],
-                     port=3306)
-cursor = db.cursor()
-try:
-    # Execute the SQL command
-    cursor.execute(sql)
-    # Commit the changes
-    db.commit()
-except:
-    # Rollback if there is any error
-    db.rollback()
-# Disconect from server
-db.close()
+if __name__ == "__main__":
+    # Connecting with database
+    db = MySQLdb.connect(host="localhost", user=argv[1], passwd=argv[2],
+                         db=argv[3], port=3306, charset="utf8")
+    # Creating the cursor
+    cur = db.cursor()
+    # Executing the Query
+    cur.execute("SELECT * FROM states ORDER BY id ASC")
+    # Selecting the information
+    query_rows = cur.fetchall()
+    for row in query_rows:
+        print(row)
+    # Closing cursor
+    cur.close()
+    # Closing database
+    db.close()
