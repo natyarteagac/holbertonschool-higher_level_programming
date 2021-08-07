@@ -15,7 +15,9 @@ if __name__ == "__main__":
     Base.metadata.create_all(engine)
     Session = sessionmaker(engine)
     session = Session()
-    # HERE: no SQL query, only objects!
-    for state in session.query(State).order_by(State.id).one():
-        print("{}: {}".format(state.id, state.name))
-    session.close()
+    # Choosing the first result of the query
+    first = session.query(State).order_by(State.id).first()
+    if not first:
+        print("Nothing")
+    else:
+        print("{}: {}".format(first.id, first.name))
