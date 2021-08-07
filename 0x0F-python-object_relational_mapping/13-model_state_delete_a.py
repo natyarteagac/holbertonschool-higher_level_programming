@@ -18,5 +18,5 @@ if __name__ == "__main__":
     # Deleting objects with the char a
     for objects in session.query(State).filter(State.name.like('%a%')).all():
         session.delete(objects)
-        session.commit()
-        session.close()
+    session.commit()
+    session.close()
