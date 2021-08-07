@@ -16,7 +16,7 @@ if __name__ == "__main__":
     Session = sessionmaker(engine)
     session = Session()
     arg_four = argv[4]
-    for state in session.query(State).order_by(State.id).all():
-        if state == arg_four:
-            print(len(state))
+    state_result = session.query(State).filter(
+        State.name == arg_four).count()
+    print(state_result)
     session.close()
