@@ -4,7 +4,7 @@
 """
 from sqlalchemy.orm import sessionmaker
 from relationship_state import Base, State
-from sqlalchemy.orm import relationship
+from sqlalchemy.orm import relationship, state
 from relationship_city import Base, City
 from sqlalchemy import (create_engine)
 from sys import argv
@@ -18,6 +18,9 @@ if __name__ == "__main__":
     Session = sessionmaker(engine)
     session = Session()
     # Printing states with all the cities.
-    new_element = cities(State.name("California"), City.name("San Francisco"))
+    new_state = State(name="California")
+    new_city = City(name="San Francisco", state=new_state)
+    session.add(new_state)
+    session.add(new_city)
     session.commit()
     session.close()
