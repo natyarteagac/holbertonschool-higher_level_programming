@@ -50,10 +50,9 @@
 <h3 class="panel-title">
       0. Get all states
 </h3>
-
 <div>
         <span class="label label-info">
-          mandatory
+          Mandatory
         </span>
     </div>
   </div>
@@ -78,7 +77,7 @@
 </h3>
 <div>
         <span class="label label-info">
-          mandatory
+          Mandatory
         </span>
     </div>
   </div>
@@ -105,7 +104,7 @@
 
 <div>
         <span class="label label-info">
-          mandatory
+          Mandatory
         </span>
     </div>
   </div>
@@ -127,10 +126,9 @@
     <h3 class="panel-title">
       3. SQL Injection...
     </h3>
-
 <div>
         <span class="label label-info">
-          mandatory
+          Mandatory
         </span>
     </div>
   </div>
@@ -163,10 +161,9 @@ guillaume@ubuntu:~/0x0F$
     <h3 class="panel-title">
       4. Cities by states
     </h3>
-
 <div>
         <span class="label label-info">
-          mandatory
+          Mandatory
         </span>
     </div>
   </div>
@@ -188,10 +185,9 @@ guillaume@ubuntu:~/0x0F$
     <h3 class="panel-title">
       5. All cities by state
     </h3>
-
 <div>
         <span class="label label-info">
-          mandatory
+          Mandatory
         </span>
     </div>
   </div>
@@ -213,10 +209,9 @@ guillaume@ubuntu:~/0x0F$
     <h3 class="panel-title">
       6. First state model
     </h3>
-
 <div>
         <span class="label label-info">
-          mandatory
+          Mandatory
         </span>
     </div>
   </div>
@@ -244,10 +239,9 @@ guillaume@ubuntu:~/0x0F$
     <h3 class="panel-title">
       7. All states via SQLAlchemy
     </h3>
-
 <div>
         <span class="label label-info">
-          mandatory
+          Mandatory
         </span>
     </div>
   </div>
@@ -269,10 +263,9 @@ guillaume@ubuntu:~/0x0F$
    <h3 class="panel-title">
       8. First state
     </h3>
-
 <div>
         <span class="label label-info">
-          mandatory
+          Mandatory
         </span>
     </div>
   </div>
@@ -296,10 +289,9 @@ guillaume@ubuntu:~/0x0F$
 <h3 class="panel-title">
       9. Contains `a`
     </h3>
-
 <div>
         <span class="label label-info">
-          mandatory
+          Mandatory
         </span>
     </div>
   </div>
@@ -321,10 +313,9 @@ guillaume@ubuntu:~/0x0F$
     <h3 class="panel-title">
       10. Get a state
     </h3>
-
 <div>
         <span class="label label-info">
-          mandatory
+          Mandatory
         </span>
     </div>
   </div>
@@ -349,7 +340,7 @@ guillaume@ubuntu:~/0x0F$
     </h3>
 <div>
         <span class="label label-info">
-          mandatory
+          Mandatory
         </span>
     </div>
   </div>
@@ -369,10 +360,9 @@ guillaume@ubuntu:~/0x0F$
     <h3 class="panel-title">
       12. Update a state
     </h3>
-
 <div>
         <span class="label label-info">
-          mandatory
+          Mandatory
         </span>
     </div>
   </div>
@@ -392,10 +382,9 @@ guillaume@ubuntu:~/0x0F$
     <h3 class="panel-title">
       13. Delete states
     </h3>
-
 <div>
         <span class="label label-info">
-          mandatory
+          Mandatory
         </span>
     </div>
   </div>
@@ -415,10 +404,9 @@ guillaume@ubuntu:~/0x0F$
     <h3 class="panel-title">
       14. Cities in state
     </h3>
-
 <div>
         <span class="label label-info">
-          mandatory
+          Mandatory
         </span>
     </div>
   </div>
