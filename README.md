@@ -23,12 +23,4 @@
 1. 0x12-javascript-warm_up
 2. 0x13-javascript_objects_scopes_closures
 
-### Made by: Natalia Arteaga C. / Cohorte 14
-
-
-
-
-
-
-Made by: Natalia Arteaga Corrales
-Holberton CH. 14 / 2021
+### Made by: Natalia Arteaga C. / Cohort 14
