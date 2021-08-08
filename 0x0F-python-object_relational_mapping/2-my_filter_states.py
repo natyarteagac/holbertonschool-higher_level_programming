@@ -12,7 +12,8 @@ if __name__ == "__main__":
     # Creating the cursor
     cur = db.cursor()
     # Executing the Query
-    cur.execute("SELECT * FROM states WHERE name LIKE '{}'".format(argv[4]))
+    cur.execute(
+        "SELECT * FROM states WHERE name LIKE BINARY '{}'".format(argv[4]))
     # Selecting the information
     query_rows = cur.fetchall()
     for row in query_rows:
