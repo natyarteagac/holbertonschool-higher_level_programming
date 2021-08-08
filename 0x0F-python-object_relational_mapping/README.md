@@ -59,9 +59,7 @@
 
   <div class="panel-body">
     <span id="user_id" data-id="2867"></span>
-    <!-- Progress vs Score -->
 
-    <!-- Task Body -->
 <p>Write a script that lists all <code>states</code> from the database <code>hbtn_0e_0_usa</code>: </p>
 
 <ul>
@@ -215,7 +213,6 @@ guillaume@ubuntu:~/0x0F$
         </span>
     </div>
   </div>
-
   <div class="panel-body">
     <span id="user_id" data-id="2867"></span>
 
