@@ -12,7 +12,7 @@ if __name__ == "__main__":
     # Creating the cursor
     cur = db.cursor()
     # Executing the Query
-    cur.execute("SELECT * FROM states WHERE name LIKE 'N%'")
+    cur.execute("SELECT * FROM states WHERE name LIKE binary 'N%'")
     # Selecting the information
     query_rows = cur.fetchall()
     for row in query_rows:
