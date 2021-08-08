@@ -17,8 +17,8 @@ if __name__ == "__main__":
     Session = sessionmaker(engine)
     session = Session()
     # Printing states with all the cities.
-    for sql_state in session.query(State)\
-        .join(City).filter(State.id == City.state_id).\
+    for state, cities in session.query(State, City)\
+        .filter(State.id == City.state_id).\
             order_by(City.id).all():
-        print("{}: {} {}".format(State.id, City.id, City.name))
+        print("{}: ({}) {}".format(state.name, cities.id, cities.name))
     session.close()
