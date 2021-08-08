@@ -15,7 +15,7 @@ if __name__ == "__main__":
     Base.metadata.create_all(engine)
     Session = sessionmaker(engine)
     session = Session()
-    # HERE: no SQL query, only objects!
-    for state in session.query(State).order_by(State.id).all():
+    # Choosing the results that matchs with the letter 'a'.
+    for state in session.query(State).filter(State.name.like('a%')):
         print("{}: {}".format(state.id, state.name))
     session.close()
