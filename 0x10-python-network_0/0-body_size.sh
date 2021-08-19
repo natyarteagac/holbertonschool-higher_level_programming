@@ -2,4 +2,4 @@
 # Script that takes in a URL, sends a request to
 # that URL
 
-curl -s "$1" -X GET -H Content-Length
+curl -sI "$2" | grep -i Content-Length | awk '{print $2}'
