@@ -5,8 +5,8 @@ from sys import argv
 from urllib import request, parse
 
 if __name__ == "__main__":
-    data = parse.urlencode(argv[2])
+    data = parse.urlencode({'email': argv[2]})
     data = data.encode('utf-8')
     url = argv[1]
-    response = request.urlopen(url, data)
-    print("Your email is: {}".format(argv[2]))
+    with request.urlopen(url, data) as response:
+        print("Your email is: {}".format(argv[2]))
