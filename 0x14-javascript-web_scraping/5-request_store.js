@@ -9,7 +9,7 @@ const nameOfFile = argv[3];
 
 request(url, function (error, response, body) {
   if (error) console.log(error);
-  fs.writeFile(nameOfFile, url, function (err) {
+  fs.writeFile(nameOfFile, body, function (err) {
     if (err) throw err;
   })
 });
