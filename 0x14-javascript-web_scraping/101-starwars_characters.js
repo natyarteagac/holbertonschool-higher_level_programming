@@ -3,16 +3,17 @@
 
 const { argv } = require('process');
 const request = require('request');
-const url = argv[2];
-let counter = 0;
+const movieId = argv[2];
 
-request(url, function (error, response, body) {
+request('https://swapi-api.hbtn.io/api/films', function (error, response, body) {
   if (error) console.log(error);
   const urlJson = JSON.parse(body).results;
   for (const movies of urlJson) {
     const characters = movies.characters;
-    for (const oneChar of characters) {
-      console.log(characters[oneChar])
+    if (movieId === movies.episodeId) {
+      for (let i = 0; i < characters.length; i++) {
+        console.log(characters[i]);
+      }
     }
   }
 });
