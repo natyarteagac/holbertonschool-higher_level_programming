@@ -11,5 +11,5 @@ request(url, function (error, response, body) {
   if (error) console.log(error);
   fs.writeFile(nameOfFile, body, function (err) {
     if (err) throw err;
-  })
+  });
 });
