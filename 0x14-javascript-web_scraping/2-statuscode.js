@@ -6,7 +6,7 @@ const request = require('request');
 
 request(args[2], function (error, response) {
   if (error) {
-    console.error('error', error);
+    console.error('code: %d', error);
   } else {
     console.log('code: %d', response.statusCode);
   }
