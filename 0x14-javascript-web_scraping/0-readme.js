@@ -1,11 +1,12 @@
 #!/usr/bin/node
+// Program to read argv[2]
 
-const fs = require('fs')
-const args = process.argv
+const fs = require('fs');
+const args = process.argv;
 
 try {
-  const data = fs.readFileSync(args[2], 'utf8')
-  console.log(data)
+  const data = fs.readFileSync(args[2], 'utf8');
+  console.log(data);
 } catch (err) {
-  console.error(err)
+  console.error(err);
 }
